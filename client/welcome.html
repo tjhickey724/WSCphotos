@@ -1,0 +1,27 @@
+<template name="welcome">
+	<div class="jumbotron">
+		<h1>WSC Atlanta 2015<br> Photo Op Splitter</h1>
+		<p>
+			Save money!<br> Make Friends!
+		</p>
+	</div>
+	
+	{{#if currentUser}}
+	<p>
+		Select a Celeb
+	</p>
+	<form id="celeb">
+		<select id="celebs">
+			<option value="shane">Jon Berthal</option>
+			<option value="carl">Chandler Riggs</option>
+			<option value="glenn">Steven Yeun</option>
+		</select><br>
+		<input type="submit">
+	</form>
+
+	{{else}}
+	You should log in!
+	{{/if}}
+
+
+</template>
